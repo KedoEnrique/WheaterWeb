@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("./img/wheater_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 70px;
+    background-color: rgba(195, 195, 195, 0.237);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
+    padding: 10px 40px 10px 40px;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 395px) {
+    nav h1, nav div{
+        margin: auto;
+    }
+}
+
+
+main {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10% 80% 10%;
+}
+
+/* From uiverse.io by @Tiagoadag */
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    grid-column-start: 2;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.67);
+    border-radius: 20px;
+    transition: all .3s;
+    color: white;
+    padding: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(198, 198, 198, 0.741);
+    width: 100%;
+}
+
+.card section:last-child {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.wheater_visual_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wheater_visual_section img {
+    width: 120%;
+    margin-top: -40px;
+    margin-bottom: -30px;
+}
+
+.wheater_information_section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    /*border: solid red 10px;*/
+}
+
+
+.wheater_information_section div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wheater_information_section div h3 {
+    font-size: 3em;
+}
+
+.wheater_information_section div h3::after{
+    content: '|';
+    font-size: 1em;
+    flex-direction: column;
+}

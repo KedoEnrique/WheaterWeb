@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WheaterDay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="logo">Wheater-Now</h1>
+            <div>
+                <input type="text">
+                <i class="fa-solid fa-magnifying-glass"></i> 
+            </div>
+        </nav>
+    </header>
+    <main> 
+        <article class = "card">
+            <section>
+                <h2>Clima en {Pais}</h2>
+            </section>
+            <section>
+                <div class = "wheater_visual_section">
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Wheater_Icon">
+                    <span>{WheatherDescription}</span>
+                </div>
+                <div class = "wheater_information_section">
+                    <div>
+                        <h3>35°C</h3>
+                        <span>
+                            <p>{max: 40°C}</p>
+                            <p>{min: 30°C}</p>
+                        </span>
+                    </div>
+                    <p>Feels like: 40°C</p>
+                </div>
+                <!-- <h4>{DayName},{MounthName}{DayNumber}</h4> -->
+            </section>
+        </article>
+    </main>
+</body>
+</html>
