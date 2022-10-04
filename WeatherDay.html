@@ -21,12 +21,14 @@
     <main> 
         <article class = "card">
             <section>
-                <h2>Clima en {Pais}</h2>
+                <h2>Estado del tiempo en {Pais}</h2>
             </section>
             <section>
                 <div class = "wheater_visual_section">
-                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Wheater_Icon">
-                    <span>{WheatherDescription}</span>
+                    <div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Wheater_Icon">
+                        <span>{WheatherDescription}</span>
+                    </div>
                 </div>
                 <div class = "wheater_information_section">
                     <div>
@@ -38,8 +40,8 @@
                     </div>
                     <p>Feels like: 40°C</p>
                 </div>
-                <!-- <h4>{DayName},{MounthName}{DayNumber}</h4> -->
             </section>
+            <h4>{DayName},{MounthName}{DayNumber}</h4>
         </article>
     </main>
 </body>
