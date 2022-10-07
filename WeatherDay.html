@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +7,14 @@
     <title>WheaterDay</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <h1 id="logo">Wheater-Now</h1>
-            <div>
-                <input type="text">
+            <div class="search">
+                <input type="text" class="srch-bar" placeholder="buscar">
                 <i class="fa-solid fa-magnifying-glass"></i> 
             </div>
         </nav>
@@ -21,24 +22,24 @@
     <main> 
         <article class = "card">
             <section>
-                <h2>Estado del tiempo en {Pais}</h2>
+                <h2 class="city">Estado del tiempo en {Pais}</h2>
             </section>
             <section>
                 <div class = "wheater_visual_section">
                     <div>
-                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Wheater_Icon">
-                        <span>{WheatherDescription}</span>
+                        <img src="http://openweathermap.org/img/wn/03n.png" class="icon" alt="Wheater_Icon">
+                        <span class="description">{WheatherDescription}</span>
                     </div>
                 </div>
                 <div class = "wheater_information_section">
                     <div>
-                        <h3>35°C</h3>
+                        <h3 class="temp">35°C</h3>
                         <span>
-                            <p>{max: 40°C}</p>
-                            <p>{min: 30°C}</p>
+                            <p class="max">{max: 40°C}</p>
+                            <p class="min">{min: 30°C}</p>
                         </span>
                     </div>
-                    <p>Feels like: 40°C</p>
+                    <p class="termic-sensation">Feels like: 40°C</p>
                 </div>
             </section>
             <section class= "secondary_wheater_information_section">
@@ -46,33 +47,26 @@
                 <table>
                     <tbody>
                         <tr>
-                            <td>January</td>
-                            <td>$100</td>
+                            <td>Presión: </td>
+                            <td class="pressure">$100</td>
                         </tr>
                         <tr>
-                            <td>February</td>
-                            <td>$80</td>
+                            <td>Humedad: </td>
+                            <td class="humidity">$80</td>
                         </tr>
                         <tr>
-                            <td>January</td>
-                            <td>$100</td>
+                            <td>Velocidad del viento:</td>
+                            <td class="wind">$100</td>
                         </tr>
                         <tr>
-                            <td>February</td>
-                            <td>$80</td>
+                            <td>Rafagas:</td>
+                            <td class="gust">$80</td>
                         </tr>
                         <tr>
-                            <td>January</td>
-                            <td>$100</td>
-                        </tr>
-                        <tr>
-                            <td>February</td>
-                            <td>$80</td>
-                        </tr>
                     </tbody>
                 </table>
             </section>
-            <h3>{DayName},{MounthName}{DayNumber}</h3>
+            <h3 class="date">{DayName},{MounthName}{DayNumber}</h3>
         </article>
     </main>
 </body>

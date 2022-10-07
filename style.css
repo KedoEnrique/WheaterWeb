@@ -112,9 +112,13 @@ table {
     }
 
     .secondary_wheater_information_section> h2, .secondary_wheater_information_section> table{
-        transform: translateY(4.5rem);
+        transform: translateY(3.5rem);
         transition: all 500ms ease;
-    }
+        -webkit-transform: translateY(3.5rem);
+        -moz-transform: translateY(3.5rem);
+        -ms-transform: translateY(3.5rem);
+        -o-transform: translateY(3.5rem);
+}
 
     .secondary_wheater_information_section:hover> h2, .secondary_wheater_information_section:hover> table, .secondary_wheater_information_section:hover{
         height: auto;
